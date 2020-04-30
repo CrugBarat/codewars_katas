@@ -21,6 +21,4 @@ let generateHashtag = (str) => {
   }
 }
 
-generateHashtag("")
-
 module.exports = generateHashtag
