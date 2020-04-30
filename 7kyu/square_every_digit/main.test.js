@@ -1,6 +1,6 @@
 const squareDigits = require('./main.js')
 
-describe("IQ Tests", () => {
+describe("Square Digits", () => {
 
   test('T1', () => {
     expect(squareDigits(9119)).toBe(811181)
