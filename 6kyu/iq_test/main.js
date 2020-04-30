@@ -9,14 +9,11 @@
 // iqTest("1 2 1 1") => 2 // Second number is even, while the rest of the numbers are odd
 
 let iqTest = function(numbers){
-  const array =  numbers.split(" ").map(x => parseInt(x) / 2).map(x => Number.isInteger(x));
-   const trueArray = array.filter(x => x === true);
-   const falseArray = array.filter(x => x === false);
-   if(trueArray.length > falseArray.length) {
-     return array.indexOf(false) +
-  1 } else {
-    return array.indexOf(true) +
-  1
+   const array =  numbers.split(" ").map(x => parseInt(x) / 2).map(x => Number.isInteger(x));
+   if(array.filter(x => x === true).length > array.filter(x => x === false).length) {
+     return array.indexOf(false) + 1
+   }  else {
+    return array.indexOf(true) + 1
   }
 }
 
