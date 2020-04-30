@@ -4,10 +4,8 @@
 
 // Note: The function accepts an integer and returns an integer
 
-function squareDigits(num){
-  let array = Array.from(String(num), Number);
-  let squaredNums = array.map(x => x * x).join("");
-  return parseInt(squaredNums);
+let squareDigits = function(num) {
+  return parseInt(Array.from(String(num), Number).map(x => x * x).join(""));
 }
 
 module.exports = squareDigits;
