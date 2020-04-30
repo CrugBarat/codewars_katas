@@ -1,6 +1,6 @@
 const consecutiveDucks = require('./main.js')
 
-describe("IQ Tests", () => {
+describe("Consecutive Ducks", () => {
 
   test('T1', () => {
     expect(consecutiveDucks(9)).toBe(true)
