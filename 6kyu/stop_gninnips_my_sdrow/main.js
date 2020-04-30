@@ -2,7 +2,7 @@
 
 // Examples: spinWords( "Hey fellow warriors" ) => returns "Hey wollef sroirraw" spinWords( "This is a test") => returns "This is a test" spinWords( "This is another test" )=> returns "This is rehtona test"
 
-let spinWords = function(str) {
+let spinWords = (str) => {
   return str.split(" ").map(a => (a.length >= 5) ? a.split("").reverse().join(""):a).join(" ");
 }
 
