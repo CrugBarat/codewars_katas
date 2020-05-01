@@ -11,9 +11,8 @@
 // 39  -->  "39? That's just 21, in base 19!"
 
 let womensAge = (n) => {
-  return Number.isInteger(n / 2) ? `${n}? That's just ${20}, in base ${Math.floor(n / 2)}!` : `${n}? That's just ${20+1}, in base ${Math.floor(n / 2)}!`;
+  return `${n}? That's just ${20+n%2}, in base ${Math.floor(n/2)}!`;
 }
 
-womensAge(39)
 
 module.exports = womensAge
