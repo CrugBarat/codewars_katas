@@ -35,21 +35,13 @@
 
 let removeNb = (n) => {
   let arr = [];
-  let res = [];
   for (let i = 1; i <= n; i++) {
-    arr.push(i);
-  }
-  let sum = arr.reduce((a, b) => a + b, 0);
-  for (let j = 0; j < arr.length; j++) {
-    sum -= arr[j];
-    for (let k = 0; k < arr.length; k++) {
-      if ((arr[j] * arr[k]) === (sum - arr[k])) {
-        res.push([arr[j], arr[k]]);
-      }
+    let j = ((((n*n)+n)/2) - i)/(i + 1);
+    if (j <= n && Number.isInteger(j) && (i * j) === ((((n*n)+n)/2) - (i + j))) {
+      arr.push([i, j]);
     }
-    sum = arr.reduce((a, b) => a + b, 0);
   }
-  return res;
+  return arr;
 }
 
 removeNb(26)
