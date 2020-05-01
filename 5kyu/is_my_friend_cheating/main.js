@@ -44,6 +44,4 @@ let removeNb = (n) => {
   return arr;
 }
 
-removeNb(26)
-
 module.exports = removeNb
