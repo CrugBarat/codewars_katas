@@ -23,10 +23,8 @@
 // expressionsMatter(1,2,3)  ==>  return 9
 
 let expressionMatter = (a, b, c) => {
-  const arr = [a + b + c, a * b * c, a + b * c, a * b + c, a + (b * c), a * (b + c), a * (b * c), (a + b) * c, (a * b) + c, (a * b) * c].sort((x, y) => y - x);
+  const arr = [a + b + c, a * b * c, a + b * c, a * b + c, a * (b + c), (a + b) * c].sort((x, y) => y - x);
   return arr[0];
 }
-
-expressionMatter(3, 5, 7)
 
 module.exports = expressionMatter
