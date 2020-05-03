@@ -8,7 +8,7 @@
 // iqTest("2 4 7 8 10") => 3 // Third number is odd, while the rest of the numbers are even
 // iqTest("1 2 1 1") => 2 // Second number is even, while the rest of the numbers are odd
 
-let iqTest = function(numbers){
+let iqTest = (numbers) => {
    const array =  numbers.split(" ").map(x => parseInt(x) / 2).map(x => Number.isInteger(x));
    if(array.filter(x => x === true).length > array.filter(x => x === false).length) {
      return array.indexOf(false) + 1
