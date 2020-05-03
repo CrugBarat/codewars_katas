@@ -1,6 +1,6 @@
 const findChildren = require('./main.js')
 
-describe("Who Likes It?", () => {
+describe("Where is my parents?", () => {
 
   test('T1', () => {
     expect(findChildren("beeeEBb")).toBe("BbbEeee")
