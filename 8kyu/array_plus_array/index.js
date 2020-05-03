@@ -5,3 +5,5 @@
 let arrayPlusArray = (arr1, arr2) => {
   return arr1.map((x, i) => x + arr2[i]).reduce((a, b) => a + b, 0);
 }
+
+module.exports = arrayPlusArray;
