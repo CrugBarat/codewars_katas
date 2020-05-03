@@ -9,7 +9,7 @@
 // likes ["Alex", "Jacob", "Mark", "Max"] // must be "Alex, Jacob and 2 others like this"
 
 
-function likes(names) {
+let likes = (names) => {
   let num = names.length;
   if (num > 3) {
     names.splice(2, (num-2));
@@ -21,7 +21,7 @@ function likes(names) {
   } else if (num === 1) {
     return `${names[0]} likes this`;
   } else {
-    return 'no one likes this'
+    return 'no one likes this';
   }
 }
 

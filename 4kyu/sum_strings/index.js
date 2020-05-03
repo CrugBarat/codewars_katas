@@ -6,12 +6,12 @@
 // A string representation of an integer will contain no characters besides the ten numerals "0" to "9".
 
 let sumStrings = (a, b) => {
-  let numA = a.split('')
+  let numA = a.split('');
   let arr1 = [];
   for (let i=0;i<numA.length;i++) {
     arr1.push(parseInt(numA[i]));
   }
-  let numB = b.split('')
+  let numB = b.split('');
   let arr2 = [];
   for (let i=0;i<numB.length;i++) {
     arr2.push(parseInt(numB[i]));
@@ -41,4 +41,4 @@ let sumStrings = (a, b) => {
 
 sumStrings('712569312664357328695151392', '8100824045303269669937')
 
-module.exports = sumStrings
+module.exports = sumStrings;

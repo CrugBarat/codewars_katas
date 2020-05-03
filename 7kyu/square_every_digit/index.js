@@ -4,7 +4,7 @@
 
 // Note: The function accepts an integer and returns an integer
 
-let squareDigits = function(num) {
+let squareDigits = (num) => {
   return parseInt(Array.from(String(num), Number).map(x => x * x).join(""));
 }
 

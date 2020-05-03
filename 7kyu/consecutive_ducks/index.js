@@ -3,6 +3,8 @@
 // Notes
 // Guaranteed constraint : 2 ≤ N ≤ (2^32) -1
 
-let consecutiveDucks = num => !Number.isInteger(Math.log2(num));
+let consecutiveDucks = (num) => {
+  return !Number.isInteger(Math.log2(num));
+}
 
-module.exports = consecutiveDucks
+module.exports = consecutiveDucks;

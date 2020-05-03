@@ -8,9 +8,7 @@
 // Place all people in alphabetical order where Mothers are followed by their children, i.e. "aAbaBb" => "AaaBbb".
 
 let findChildren = (dancingBrigade) => {
-  return dancingBrigade.toLowerCase().split('').sort().map((x,y,arr) => x !== arr[y-1] ? x.toUpperCase() : x).join('');
+  return dancingBrigade.toLowerCase().split('').sort().map((x, y, arr) => x !== arr[y-1] ? x.toUpperCase() : x).join('');
 };
-
-findChildren("uwwWUueEe")
 
 module.exports = findChildren;

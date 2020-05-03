@@ -11,10 +11,10 @@
 let iqTest = (numbers) => {
    const array =  numbers.split(" ").map(x => parseInt(x) / 2).map(x => Number.isInteger(x));
    if(array.filter(x => x === true).length > array.filter(x => x === false).length) {
-     return array.indexOf(false) + 1
+     return array.indexOf(false) + 1;
    }  else {
-    return array.indexOf(true) + 1
+    return array.indexOf(true) + 1;
   }
 }
 
-module.exports = iqTest
+module.exports = iqTest;

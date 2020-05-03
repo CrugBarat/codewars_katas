@@ -15,10 +15,10 @@
 
 let generateHashtag = (str) => {
   if (str.replace(/\s/g, '') === '' || str.replace(/\s/g, '').length >= 140) {
-    return false
+    return false;
   } else {
     return '#' + str.split(' ').map((x) => x.charAt(0).toUpperCase() + x.slice(1)).join(' ').replace(/\s/g, '');
   }
 }
 
-module.exports = generateHashtag
+module.exports = generateHashtag;

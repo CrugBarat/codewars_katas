@@ -44,4 +44,4 @@ let removeNb = (n) => {
   return arr;
 }
 
-module.exports = removeNb
+module.exports = removeNb;

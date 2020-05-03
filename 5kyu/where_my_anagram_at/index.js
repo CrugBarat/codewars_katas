@@ -16,17 +16,15 @@
 // anagrams('laser', ['lazing', 'lazy',  'lacer']) => []
 
 let  anagrams = (word, words) => {
-  let res = []
+  let res = [];
   let arr = word.split('').sort().join('');
-  let arr2 = words.map(x => x.split('').sort().join('')).map(x => x === arr)
+  let arr2 = words.map(x => x.split('').sort().join('')).map(x => x === arr);
   for(i=0;i<arr2.length;i++) {
     if(arr2[i] === true) {
-      res.push(words[i])
+      res.push(words[i]);
     }
   }
   return res;
 }
 
-anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada'])
-
-module.exports = anagrams
+module.exports = anagrams;

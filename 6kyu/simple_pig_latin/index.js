@@ -11,7 +11,7 @@ let pigIt = (str) => {
     let char = str.slice(-1);
     let newStr = str.substring(0, str.length-1);
     let newArray = newStr.split(' ');
-    newArray.pop()
+    newArray.pop();
     return newArray.map(x => x.slice(1)).map((e, i) => e + newStr.split(' ').map(x => x.charAt(0) + 'ay')[i]).join(' ') + " " + char;
   }
 }

@@ -26,4 +26,4 @@ let expressionMatter = (a, b, c) => {
   return [a + b + c, a * b * c, a + b * c, a * b + c, a * (b + c), (a + b) * c].sort((x, y) => y - x)[0];
 }
 
-module.exports = expressionMatter
+module.exports = expressionMatter;

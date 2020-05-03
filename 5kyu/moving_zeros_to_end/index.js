@@ -12,11 +12,9 @@ function times(diff, arr) {
 
 let moveZeros = (arr) => {
   const removingZeros = arr.filter(x => x !== 0);
-  const diff = arr.length - removingZeros.length
-  times(diff, removingZeros)
-  return removingZeros
+  const diff = arr.length - removingZeros.length;
+  times(diff, removingZeros);
+  return removingZeros;
 }
-
-moveZeros([false,1,0,1,2,0,1,3,"a"])
 
 module.exports = moveZeros;

@@ -1,4 +1,4 @@
-const arrayPlusArray = require('./index.js')
+const arrayPlusArray = require('./index.js');
 
 describe("Array Plus Array", () => {
 
@@ -18,4 +18,4 @@ describe("Array Plus Array", () => {
     expect(arrayPlusArray([100, 200, 300], [400, 500, 600])).toEqual(2100);
   });
 
-})
+});
