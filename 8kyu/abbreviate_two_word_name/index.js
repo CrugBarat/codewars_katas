@@ -14,4 +14,4 @@ let abbrevName = (name) => {
   return `${arr[0]}.${arr[1]}`;
 }
 
-module.export = abbrevName;
+module.exports = abbrevName;
