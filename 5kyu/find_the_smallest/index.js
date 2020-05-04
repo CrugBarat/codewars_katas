@@ -12,35 +12,7 @@
 // 126235 is the smallest number gotten by taking 1 at index 2 and putting it at index 0
 
 let smallest = (n) => {
-    const result = [];
-    const intArray = ('' + n).split('');
-    const sortArray = ('' + n).split('').sort();
-    const removingZeros = intArray.filter(x => x !== '0');
-    if (removingZeros.length === ('' + n).split('').length) {
-      const smallestNum = sortArray[0];
-      const index = intArray.indexOf(smallestNum);
-      const position = sortArray.indexOf(smallestNum);
-      let newInt = intArray;
-      newInt.splice(index, 1);
-      newInt.unshift(smallestNum);
-      newInt = parseInt(newInt.join(''));
-      result.push(newInt, index, position);
-      return result;
-    } else if (removingZeros.length === 5) {
-      const smallestNum = removingZeros[0];
-      const index = removingZeros.indexOf(smallestNum);
-      const position = intArray.indexOf('0');
-      newInt = parseInt(removingZeros.join(''));
-      result.push(newInt, index, position);
-      return result;
-    } else {
-      const position = 7 - removingZeros.length;
-      const smallestNum = removingZeros[0];
-      const index = removingZeros.indexOf(smallestNum);
-      newInt = parseInt(removingZeros.join(''));
-      result.push(newInt, index, position);
-      return result;
-    }
+
 }
 
 smallest(209917)
